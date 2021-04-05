@@ -1,0 +1,15 @@
+.parent{
+	background-color: rgb(225, 235, 235);
+
+}
+.child {
+	background-color: rgb(163, 163, 144);
+  
+}
+/*.title {
+	background-color: rgb(205, 50, 50);
+
+}*/
+h1 {
+	background-color: yellowgreen;
+}
