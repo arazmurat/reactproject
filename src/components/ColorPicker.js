@@ -13,14 +13,14 @@ class ColorPicker extends React.Component {
   componentDidMount() {
     console.log(
       "i invoked immediately after component is mounted, just one time at the beginning; after render method"
-    );//this.chooseColor()
-    
+    ); //this.chooseColor()
   }
 
   componentDidUpdate(prevProps, prevState) {
     console.log(
       "i invoked immediately after updating occurs, upon every change."
-    ); this.applyColor()
+    );
+    this.applyColor();
   }
 
   isLight(colorArr) {
@@ -31,7 +31,7 @@ class ColorPicker extends React.Component {
     return "rgb(" + colorArr.join(", ") + ")"; // it should return rgb format of color acording to the given array;
   }
 
-  chooseColor=()=> {
+  chooseColor = () => {
     const r = Math.floor(Math.random() * 256);
     const g = Math.floor(Math.random() * 256);
     const b = Math.floor(Math.random() * 256);
@@ -39,14 +39,14 @@ class ColorPicker extends React.Component {
     this.setState({ color: [r, g, b] });
     //this.applyColor()
     //it creates an array, consist of randomized numbers (between 0 and 256). And sets the state of color.
-  }
-  applyColor=() => {
+  };
+  applyColor = () => {
     const color = this.formatColor(this.state.color);
     document.body.style.backgroundColor = color;
-  }
+  };
 
   render() {
-    //this.applyColor();//First method 
+    //this.applyColor();//First method
     return (
       <div>
         <h1 className={this.isLight(this.state.color) ? "white" : "black"}>
