@@ -1,0 +1,27 @@
+.App{
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Quote{
+  border: 1px solid black;
+  height: 200px;
+  width: 60%;
+  max-width: 100%;
+  background-color: white;
+  margin: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.ButtonContainer{
+  padding: 10px;
+}
+.ButtonContainer button{
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+ 
+}
